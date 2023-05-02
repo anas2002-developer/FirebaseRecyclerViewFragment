@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EachCardFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Each Card Fragment"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/imgEach_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Here"
+            android:id="@+id/txtEach_name"
+            android:textSize="20sp"
+            android:layout_below="@+id/imgEach_image"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Here"
+            android:id="@+id/txtEach_course"
+            android:layout_below="@id/txtEach_name"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Here"
+            android:id="@+id/txtEach_email"
+            android:layout_marginBottom="40dp"
+            android:layout_above="@id/imgEach_image"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+</FrameLayout>
